@@ -298,63 +298,23 @@ renderExploreProducts();
 
 
 
+function addToCard(id, productList) {
+  const basket = JSON.parse(localStorage.getItem("basket")) || [];
 
-    
+  const findProduct = productList.find((product) => product.id === id);
 
+  if (!findProduct) {
+    alert("Mahsulot topilmadi");
+    return;
+  }
 
+  const isExist = basket.find((item) => item && item.id === findProduct.id);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// const basket = JSON.parse(localStorage.getItem("basket")) || [];
-
-//   function addToCard(id) {
-//     const findProduct = products.find((product) => product.id === id);
-
-
-//     if (!findProduct) {
-//         alert("Mahsulot topilmadi");
-//         return;
-//     }
-
-//     const isExist = basket.find(
-//         (item) => item && item.id === findProduct.id
-//     );
-
-//     if (isExist) {
-//         alert("Bu tovar savatda mavjud");
-//     } else {
-//         basket.push(findProduct);
-
-//         localStorage.setItem("basket", JSON.stringify(basket));
-
-//         alert("Tovar savatga qo'shildi");
-//     }
-// }
+  if (isExist) {
+    alert("Bu tovar savatda mavjud");
+  } else {
+    basket.push(findProduct);
+    localStorage.setItem("basket", JSON.stringify(basket));
+    alert("Tovar savatga qo'shildi");
+  }
+}
