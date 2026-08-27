@@ -298,10 +298,11 @@ renderExploreProducts();
 
 
 
-function addToCard(id, productList) {
+function addToCard(id) {
   const basket = JSON.parse(localStorage.getItem("basket")) || [];
+  const allProducts = [...products, ...bestSellingProducts, ...exploreProducts];
 
-  const findProduct = productList.find((product) => product.id === id);
+  const findProduct = allProducts.find((product) => product.id === id);
 
   if (!findProduct) {
     alert("Mahsulot topilmadi");
