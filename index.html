@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+
+        <!-- Top Header -->
+        <div class="top-header">
+          <p>
+            Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!
+            <a href="#">ShopNow</a>
+          </p>
+      
+          <div class="language">
+            <span>English</span>
+          </div>
+        </div>
+      
+        <!-- Navbar -->
+        <nav class="navbar container">
+          <div class="logo">
+            <img src="./images/Exclusive.png" alt="">
+          </div>
+      
+          <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Contact</a>
+            <a href="#">About</a>
+            <a href="#">Sign Up</a>
+          </div>
+      
+          <div class="nav-right">
+      
+            <div class="search search-input">
+              <input type="text" placeholder="What are you looking for?">
+      
+              <!-- SEARCH ICON JOYI -->
+                <div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+          </div>
+              <!-- HEART ICON JOYI -->
+              <div class="nav-icon">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+      
+            <!-- CART ICON JOYI -->
+            <div class="nav-icon">
+            <a href="./basket/basket.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+
+        </nav>
+      </header>
+
+
+<main>
+    <section class="hero container">
+        <aside class="sidebar">
+        <ul class="aside-text">
+        <li class="aside-icon">Woman’s Fashion</li>
+        <li class="aside-icon"  >Men’s Fashion
+        <i class="fa-solid fa-chevron-right"></i>
+        </li>
+        <li>Electronics</li>
+        <li>Home & Lifestyle</li>
+        <li>Medicine</li>
+        <li>Sports & Outdoor</li>
+        <li>Baby’s & Toys</li>
+        <li>Groceries & Pets</li>
+        <li>Health & Beauty</li>
+        
+
+        </ul>
+        </aside>
+
+        <div class="hero-img">
+            <img src="./images/hero-iphone.png" alt="iphone images">
+        </div>
+
+    </section>
+
+    <section class="flash-sales">
+
+        <div class="today container">
+      
+          <div>
+            <h4>Today's</h4>
+            <h2>Flash Sales</h2>
+          </div>
+        </div>
+      
+      </section>
+
+
+    <div class="products container">
+    </div>
+
+
+    <section class="category-section container">
+
+        <div class="category-title">
+          <span></span>
+          <p>Categories</p>
+        </div>
+      
+        <div class="category-header">
+          <h2>Browse By Category</h2>
+      
+          <div class="category-buttons">
+            <button>
+              <i class="fa-solid fa-arrow-left"></i>
+            </button>
+      
+            <button>
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      
+        <div class="categories">
+
+          <button class="category-card" onclick="filterCategory('phones')">
+            <i class="fa-solid fa-mobile-screen-button"></i>
+            <span>Phones</span>
+          </button>
+        
+          <button class="category-card" onclick="filterCategory('computers')">
+            <i class="fa-solid fa-desktop"></i>
+            <span>Computers</span>
+          </button>
+        
+          <button class="category-card" onclick="filterCategory('smartwatch')">
+            <i class="fa-regular fa-clock"></i>
+            <span>SmartWatch</span>
+          </button>
+        
+          <button class="category-card active" onclick="filterCategory('camera')">
+            <i class="fa-solid fa-camera"></i>
+            <span>Camera</span>
+          </button>
+        
+          <button class="category-card" onclick="filterCategory('headphones')">
+            <i class="fa-solid fa-headphones"></i>
+            <span>HeadPhones</span>
+          </button>
+        
+          <button class="category-card" onclick="filterCategory('gaming')">
+            <i class="fa-solid fa-gamepad"></i>
+            <span>Gaming</span>
+          </button>
+        
+        </div>
+      
+      </section>
+
+
+     
+
+      <section class="selling-section container">
+
+        <div class="section-title">
+          <span></span>
+          <p>This Month</p>
+        </div>
+      
+        <div class="selling-header">
+          <h2>Best Selling Products</h2>
+      
+          <button class="view-all">View All</button>
+        </div>
+      
+        <!-- JS shu yerga productlarni chiqaradi -->
+        <div class="selling-products"></div>
+      
+      </section>
+
+
+      <section class="sambufir container">
+        <img src="./images/Frame 600.png" alt="">
+      </section> 
+      
+      <section class="explore">
+
+        <div class="category-title container">
+          <span></span>
+          <p>Categories</p>
+        </div>
+  
+        <div class="category-header container">
+          <h2>Explore Our Products</h2>
+      
+          <div class="category-buttons">
+            <button>
+              <i class="fa-solid fa-arrow-left"></i>
+            </button>
+      
+            <button>
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- js shu yerda -->
+        <div class="explore-products container">
+        </div>
+      </section>
+
+
+      <section class="featured">
+
+        <div class="category-title container">
+          <span></span>
+          <p>Featured</p>
+        </div>
+  
+        <div class="category-header container">
+          <h2>New Arrival</h2>
+          </div>
+        </div>
+
+        <div class="feature-img container">
+          <img src="./images/Frame 739.png" alt="">
+        </div>
+
+      </section>
+    </main>
+
+
+    <footer class="footer">
+
+      <div class="footer-container">
+    
+        <!-- Exclusive -->
+        <div class="footer-box">
+          <h3>Exclusive</h3>
+          <h4>Subscribe</h4>
+          <p>Get 10% off your first order</p>
+    
+          <div class="subscribe">
+            <input type="email" placeholder="Enter your email">
+            <button>➤</button>
+          </div>
+        </div>
+    
+        <!-- Support -->
+        <div class="footer-box">
+          <h3>Support</h3>
+    
+          <p>
+            111 Bijoy sarani, Dhaka,<br>
+            DH 1515, Bangladesh.
+          </p>
+    
+
+          <p>exclusive@gmail.com</p>
+          <p>+88015-88888-9999</p>
+        </div>
+    
+        <!-- Account -->
+        <div class="footer-box">
+          <h3>Account</h3>
+    
+          <a href="#">My Account</a>
+          <a href="#">Login / Register</a>
+          <a href="#">Cart</a>
+          <a href="#">Wishlist</a>
+          <a href="#">Shop</a>
+        </div>
+    
+        <!-- Quick Link -->
+        <div class="footer-box">
+          <h3>Quick Link</h3>
+    
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms Of Use</a>
+          <a href="#">FAQ</a>
+          <a href="#">Contact</a>
+        </div>
+    
+        <!-- Download App -->
+        <div class="footer-box download">
+          <h3>Download App</h3>
+    
+          <p>Save $3 with App New User Only</p>
+          
+          <img src="./images/Frame 719.png" alt="">
+          
+        </div>
+    
+      </div>
+    
+      <div class="copyright">
+        © Copyright Rimel 2022. All right reserved
+      </div>
+    
+    </footer>
+
+
+<script src="./index.js"></script>
+</body>
+</html>
